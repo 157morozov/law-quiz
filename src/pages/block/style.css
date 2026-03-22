@@ -1,0 +1,40 @@
+.block-page {
+  display: grid;
+  gap: 24px;
+}
+
+.block-page__topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.block-page__back {
+  color: #fbbf24;
+}
+
+.block-page__actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.block-page__next {
+  min-width: 240px;
+  cursor: pointer;
+}
+
+.block-page__next:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.block-page__empty,
+.results-page__empty,
+.leaderboard-page__status {
+  padding: 28px;
+  border-radius: 28px;
+  background: rgba(15, 23, 42, 0.82);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  color: #cbd5e1;
+}
