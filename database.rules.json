@@ -1,0 +1,30 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "users": {
+      "$uid": {
+        ".read": "auth != null && auth.uid === $uid",
+        ".write": "auth != null && auth.uid === $uid",
+        "profile": {
+          ".validate": "newData.hasChildren(['displayName', 'schoolClass', 'createdAt']) && newData.child('displayName').isString() && newData.child('displayName').val().length > 1 && newData.child('displayName').val().length <= 40 && newData.child('schoolClass').isString() && newData.child('schoolClass').val().matches(/^(9|10|11)$/) && newData.child('createdAt').isString()"
+        },
+        "progress": {
+          "$blockId": {
+            ".validate": "newData.hasChildren(['score', 'maxScore', 'correctCount', 'totalQuestions', 'rankKey', 'completedAt']) && newData.child('score').isNumber() && newData.child('maxScore').isNumber() && newData.child('correctCount').isNumber() && newData.child('totalQuestions').isNumber() && newData.child('rankKey').isString() && newData.child('completedAt').isString()"
+          }
+        },
+        "summary": {
+          ".validate": "newData.hasChildren(['totalScore', 'maxScore', 'rankKey', 'updatedAt']) && newData.child('totalScore').isNumber() && newData.child('maxScore').isNumber() && newData.child('rankKey').isString() && newData.child('updatedAt').isString()"
+        }
+      }
+    },
+    "leaderboard": {
+      ".read": true,
+      "$uid": {
+        ".write": "auth != null && auth.uid === $uid",
+        ".validate": "newData.hasChildren(['displayName', 'schoolClass', 'totalScore', 'maxScore', 'rankKey', 'updatedAt']) && newData.child('displayName').isString() && newData.child('displayName').val().length > 1 && newData.child('displayName').val().length <= 40 && newData.child('schoolClass').isString() && newData.child('schoolClass').val().matches(/^(9|10|11)$/) && newData.child('totalScore').isNumber() && newData.child('maxScore').isNumber() && newData.child('rankKey').isString() && newData.child('updatedAt').isString()"
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.leaderboard-page {
+  display: grid;
+  gap: 24px;
+}
+
+.leaderboard-page__hero {
+  display: grid;
+  gap: 12px;
+  max-width: 760px;
+}

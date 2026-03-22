@@ -1,0 +1,10 @@
+.results-page {
+  display: grid;
+  gap: 24px;
+}
+
+.results-page__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}

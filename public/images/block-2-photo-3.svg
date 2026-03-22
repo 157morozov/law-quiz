@@ -1,0 +1,10 @@
+<svg width="640" height="420" viewBox="0 0 640 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="420" rx="28" fill="#1C1917"/>
+  <rect x="44" y="44" width="552" height="332" rx="26" fill="#292524" stroke="#FDBA74" stroke-width="4"/>
+  <rect x="154" y="148" width="332" height="146" rx="18" fill="#9A3412"/>
+  <rect x="212" y="118" width="216" height="48" rx="14" fill="#EA580C"/>
+  <circle cx="214" cy="224" r="26" fill="#FFEDD5"/>
+  <circle cx="426" cy="224" r="26" fill="#FFEDD5"/>
+  <rect x="290" y="182" width="60" height="86" rx="16" fill="#FDBA74"/>
+  <text x="320" y="338" text-anchor="middle" fill="#FFF7ED" font-size="24" font-family="Arial">Следственный чемодан</text>
+</svg>

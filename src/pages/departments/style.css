@@ -1,0 +1,48 @@
+.departments-page {
+  display: grid;
+  gap: 24px;
+}
+
+.departments-page__hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 28px;
+  border-radius: 30px;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  background: rgba(15, 23, 42, 0.82);
+}
+
+.departments-page__summary {
+  display: grid;
+  gap: 8px;
+  min-width: 240px;
+  padding: 18px;
+  border-radius: 24px;
+  background: rgba(2, 6, 23, 0.32);
+}
+
+.departments-page__summary-label {
+  color: #94a3b8;
+}
+
+.departments-page__summary-score {
+  font-size: 1.6rem;
+}
+
+.departments-page__summary-rank {
+  color: #fcd34d;
+}
+
+.departments-page__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+@media (max-width: 960px) {
+  .departments-page__grid {
+    grid-template-columns: 1fr;
+  }
+}

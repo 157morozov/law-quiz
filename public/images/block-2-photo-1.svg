@@ -1,0 +1,9 @@
+<svg width="640" height="420" viewBox="0 0 640 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="420" rx="28" fill="#111827"/>
+  <rect x="48" y="48" width="544" height="324" rx="24" fill="#1F2937" stroke="#F59E0B" stroke-width="4"/>
+  <circle cx="320" cy="170" r="72" fill="#FDE68A" opacity="0.9"/>
+  <path d="M284 154C284 134.118 300.118 118 320 118C339.882 118 356 134.118 356 154V174H284V154Z" fill="#92400E"/>
+  <rect x="272" y="174" width="96" height="92" rx="18" fill="#D97706"/>
+  <path d="M228 312C252 278 284 262 320 262C356 262 388 278 412 312" stroke="#FBBF24" stroke-width="18" stroke-linecap="round"/>
+  <text x="320" y="348" text-anchor="middle" fill="#F9FAFB" font-size="24" font-family="Arial">Сотрудник полиции</text>
+</svg>
